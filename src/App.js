@@ -55,12 +55,12 @@ const App = () => {
       <Typography variant='h5'>Lorem ipsum dolor sit amet</Typography>
       </Box>
       <Grid container px={{xs:2,md:10,lg:20}}  >
-        <Grid item xs={4}>
+        <Grid item xs={3}>
           <Paper elevation={2} sx={{p:3}}>
           <Sidebar routes={routes}/>
           </Paper>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={9}>
           <Routes>
             {routes.map((e)=>{
               return (
