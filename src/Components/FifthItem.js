@@ -5,7 +5,7 @@ import React from 'react'
 const Content = () => {
   return (
     <Box container sx={{p:3,height:"90px"}}>
-        <Typography variant="h4" sx={{pb:3}}>
+        <Typography variant="h4" sx={{pb:3,fontWeight:"bold"}}>
         Fifth Item Lorem ipsum dolor
         </Typography>
         <Typography variant='body1'>

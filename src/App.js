@@ -51,7 +51,7 @@ const App = () => {
   return (
     <Box container sx={{display:"flex",alignItems:"center",flexDirection:"column"}} >
       <Box sx={{py:5}}>
-      <Typography variant='h2' >Lorem ipsum dolor sit amet</Typography>
+      <Typography variant='h2' sx={{fontWeight:"bold"}}>Lorem ipsum dolor sit amet</Typography>
       <Typography variant='h5'>Lorem ipsum dolor sit amet</Typography>
       </Box>
       <Grid container px={{xs:2,md:10,lg:20}}  >
