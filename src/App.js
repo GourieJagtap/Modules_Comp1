@@ -1,4 +1,4 @@
-import { Grid, Paper, Typography } from '@mui/material';
+import { Grid, Paper, Typography,Card } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import { Route, Router, Routes } from 'react-router';
@@ -49,18 +49,20 @@ const App = () => {
   ];
 
   return (
-    <Box container sx={{display:"flex",alignItems:"center",flexDirection:"column"}} >
-      <Box sx={{py:5}}>
+    <Box container >
+      <Box component="grid" sx={{display:"flex",alignItems:"center",flexDirection:"column",py:5}}>
+        <Grid item md={12} p={{xs:2,md:4}}  >
       <Typography variant='h2' sx={{fontWeight:"bold"}}>Lorem ipsum dolor sit amet</Typography>
-      <Typography variant='h5'>Lorem ipsum dolor sit amet</Typography>
+      <Typography variant='h5'sx={{color:"#3B3B3B"}}>Lorem ipsum dolor sit amet</Typography>
+      </Grid>
       </Box>
-      <Grid container px={{xs:2,md:10,lg:20}}  >
-        <Grid item xs={3}>
-          <Paper elevation={2} sx={{p:3}}>
+      <Grid container px={{xs:2,md:10,lg:18}} >
+        <Grid item xs={3.5} >
+          <Card sx={{px:2,py:4}} variant="outlined">
           <Sidebar routes={routes}/>
-          </Paper>
+          </Card>
         </Grid>
-        <Grid item xs={9}>
+        <Grid item xs={8.5} sx={{px:5,py:3}}>
           <Routes>
             {routes.map((e)=>{
               return (

@@ -1,16 +1,14 @@
 import { Drawer, Grid, ListItem, MenuItem, Paper, Typography } from '@mui/material'
 import { Box } from '@mui/system';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import "./Sidebar.css"
 
-
-// const drawerItems=["firstItem","SecondItem","ThirdItem"];
-const pages = ["firstItem","firstItem","firstItem","firstItem","firstItem",];
 
 const Sidebar = (props) => {
 
   const links= props.routes.map((i)=>{
-    return (<li><ListItem component="li"><Link key={i.name} to={i.path}>{i.name}</Link></ListItem></li>)
+    return (<li style={{padding:"8px",fontWeight:"800",fontSize:"20px"}}><NavLink style={{color: 'Black', textDecoration: 'none',fontWeight:"700" }} key={i.name} to={i.path}>{i.name}</NavLink></li>)
   })
 
   return (
